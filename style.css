@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+body {
+  background: #2e2e2e;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+#credit {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px white,
+    0 0 15px white;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+}
+.cursor {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px white;
+  z-index: 100;
+  transition: left 0.05s ease, top 0.05s ease;
+}
+.cursor-ring {
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px white;
+  z-index: 99;
+  transition: left 0.1s ease, top 0.1s ease;
+}
+.trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  filter: blur(1px);
+  z-index: 98;
+  transition: left 0.1s ease, top 0.1s ease, opacity 0.3s ease;
+}
